@@ -61,7 +61,7 @@ def filter_and_save_data_parallel(apikey, case_ids, output_file, num_threads=5):
 
 def main():
     apikey = get_apikey()
-    case_ids = get_caseId('caseid/output_part_12.csv')
+    case_ids = get_caseId('caseid/output_file.csv')
     filter_and_save_data_parallel(apikey, case_ids, "filtered_cases.csv", num_threads=10)
 
 
