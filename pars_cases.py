@@ -29,7 +29,7 @@ def get_data_filtered(apikey, caseId):
         data = response.json()
         items = data.get('items', [])
         if items:
-            # Фильтруем только те элементы, у которых есть дата и она >= 2010 года
+            # Фильтруем только те элементы, у которых есть дата и она >= 2021 года
             filtered_data = [{"caseId": caseId, "startDate": item.get('startDate')}
                              for item in items
                              if item.get('startDate') and item.get('startDate') >= '2021-01-01']
